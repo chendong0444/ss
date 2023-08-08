@@ -1,0 +1,933 @@
+{
+    "hashes": {
+        "checkpoint/v1-5-pruned-emaonly.safetensors": {
+            "mtime": 1683683900.677068,
+            "sha256": "6ce0161689b3853acaa03779ec93eafe75a02f4ced659bee03f50797806fa2fa"
+        },
+        "checkpoint/majicmixRealistic_v5.safetensors": {
+            "mtime": 1685409676.5855668,
+            "sha256": "33c9f6dfcbd3b86e76ffdfc58253ee73f6c1b513238481dcd5d6a27b7ad3df0f"
+        }
+    },
+    "safetensors-metadata": {
+        "lora/chaeyoungtwicelora.2jFM": {
+            "mtime": 1689044554.643813,
+            "value": {
+                "ss_cache_latents": "True",
+                "ss_caption_dropout_every_n_epochs": "0",
+                "ss_caption_dropout_rate": "0.0",
+                "ss_caption_tag_dropout_rate": "0.0",
+                "ss_clip_skip": "2",
+                "ss_dataset_dirs": {
+                    "train_data": {
+                        "n_repeats": 10,
+                        "img_count": 79
+                    }
+                },
+                "ss_datasets": "[{\"is_dreambooth\": true, \"batch_size_per_device\": 6, \"num_train_images\": 790, \"num_reg_images\": 0, \"resolution\": [512, 512], \"enable_bucket\": true, \"min_bucket_reso\": 256, \"max_bucket_reso\": 1024, \"tag_frequency\": {\"train_data\": {\"chaeyoungtwicelora\": 79, \"1girl\": 78, \"solo\": 74, \"long hair\": 66, \"looking at viewer\": 61, \"open mouth\": 7, \"blonde hair\": 60, \"ribbon\": 6, \"jewelry\": 45, \"earrings\": 18, \"mole\": 61, \"black eyes\": 36, \"cosplay\": 4, \"pink background\": 4, \"portrait\": 16, \"mole under mouth\": 50, \"forehead\": 2, \"realistic\": 71, \"tongue\": 4, \"tongue out\": 3, \"simple background\": 7, \"shirt\": 30, \"bow\": 5, \"white shirt\": 16, \"upper body\": 23, \"hair bow\": 3, \"hairband\": 2, \"v\": 5, \"ring\": 14, \"double v\": 1, \"smile\": 17, \"pointing\": 4, \"blue eyes\": 6, \"lips\": 54, \"dutch angle\": 1, \"bangs\": 33, \"black hair\": 19, \"white background\": 2, \"holding\": 11, \"multicolored hair\": 9, \"necktie\": 6, \"solo focus\": 1, \"blunt bangs\": 2, \"phone\": 3, \"cellphone\": 3, \"heart\": 3, \"necklace\": 19, \"sweater\": 6, \"turtleneck\": 1, \"cross\": 2, \"cross necklace\": 1, \"nose\": 3, \"pointing at viewer\": 2, \"closed mouth\": 8, \"hood\": 1, \"hat\": 2, \"brown eyes\": 10, \"jacket\": 7, \"zipper\": 3, \"skirt\": 5, \"long sleeves\": 11, \"standing\": 3, \"pantyhose\": 1, \"cowboy shot\": 3, \"pleated skirt\": 1, \"parted lips\": 15, \"bag\": 2, \"head tilt\": 2, \"plaid\": 1, \"blue background\": 2, \"plaid skirt\": 1, \"baseball cap\": 1, \"handbag\": 1, \"shoulder bag\": 1, \"collared shirt\": 4, \"black necktie\": 3, \"short hair\": 3, \"teeth\": 11, \"wing collar\": 1, \"red background\": 2, \"cosmetics\": 1, \"lipstick tube\": 1, \"short sleeves\": 7, \"tattoo\": 7, \"arm tattoo\": 4, \"sleeveless\": 1, \"arm up\": 1, \"sleeveless shirt\": 1, \"makeup\": 1, \"breasts\": 3, \"navel\": 3, \"monochrome\": 2, \"greyscale\": 2, \"midriff\": 6, \"striped\": 1, \"black background\": 1, \"mole on breast\": 3, \"sitting\": 3, \"closed eyes\": 2, \"braid\": 7, \"pants\": 3, \"twin braids\": 1, \"fangs\": 1, \"t-shirt\": 2, \"couch\": 1, \"jeans\": 5, \"blue pants\": 1, \"print shirt\": 3, \"sticker\": 1, \"bare shoulders\": 5, \"dress\": 8, \"hands on hips\": 1, \"bird\": 1, \"animal\": 1, \"on head\": 3, \"white hair\": 2, \"animal ears\": 1, \"holding phone\": 2, \"nail polish\": 12, \"blurry\": 5, \"black jacket\": 3, \"parted bangs\": 3, \"pokemon (creature)\": 2, \"blurry background\": 6, \"black nails\": 5, \"hands on own face\": 2, \"hands on own cheeks\": 2, \"pokemon on head\": 2, \"pikachu\": 2, \"flower\": 7, \"green shirt\": 1, \"holding flower\": 2, \"close-up\": 4, \"sunflower\": 1, \"grin\": 3, \"depth of field\": 1, \"denim\": 5, \"blue nails\": 3, \"own hands together\": 1, \"bandaid\": 1, \"bandaid on face\": 1, \"biting\": 1, \"lying\": 1, \"on back\": 1, \"bracelet\": 3, \"ball\": 1, \"soccer uniform\": 1, \"soccer ball\": 1, \"soccer\": 1, \"telstar\": 1, \"multiple girls\": 2, \"brown hair\": 1, \"indoors\": 5, \"white dress\": 4, \"6+girls\": 1, \"wavy hair\": 3, \"sandals\": 2, \"pillar\": 2, \"throne\": 1, \"statue\": 1, \"belt\": 4, \"black skirt\": 3, \"hair bun\": 2, \"black shirt\": 2, \"double bun\": 2, \"traditional media\": 1, \"star (symbol)\": 2, \"yellow nails\": 3, \"looking to the side\": 2, \"looking away\": 1, \"freckles\": 2, \"food\": 1, \"candy\": 1, \"lollipop\": 1, \"shorts\": 1, \"lipstick\": 1, \"denim shorts\": 1, \"two-tone hair\": 3, \"game console\": 1, \"english text\": 2, \"parody\": 1, \"meme\": 1, \"wings\": 2, \"angel wings\": 2, \"artist name\": 2, \"clothing cutout\": 1, \"weapon\": 1, \"sword\": 1, \"holding weapon\": 1, \"holding sword\": 1, \"katana\": 1, \"shoulder cutout\": 1, \"detached sleeves\": 2, \"column\": 1, \"green background\": 2, \"full body\": 1, \"shoes\": 2, \"socks\": 1, \"black footwear\": 1, \"backpack\": 1, \"white socks\": 1, \"sneakers\": 1, \"adidas\": 1, \"arms up\": 2, \"crop top\": 1, \"clothes writing\": 1, \"hair ornament\": 4, \"hair flower\": 2, \"bra strap\": 3, \"sleeves past wrists\": 1, \"piercing\": 1, \"ear piercing\": 1, \"hairclip\": 1, \"multiple boys\": 1, \"smartphone\": 1, \"ground vehicle\": 2, \"selfie\": 3, \"hair ribbon\": 1, \"high heels\": 1, \"chair\": 1, \"curtains\": 1, \"white ribbon\": 1, \"cigarette\": 2, \"leather\": 1, \"leather jacket\": 1, \"microphone\": 2, \"midriff peek\": 1, \"holding microphone\": 1, \"\\\\m/\": 1, \"\\\\n/\": 1, \"tears\": 3, \"crying\": 1, \"hair over shoulder\": 1, \"headset\": 1, \"mole under eye\": 1, \"photo background\": 1, \"reference inset\": 1, \"photo inset\": 1, \"cleavage\": 1, \"licking lips\": 1, \"blinds\": 1, \"motor vehicle\": 1, \"camisole\": 1, \"car\": 1, \"car interior\": 1}}, \"bucket_info\": {\"buckets\": {\"0\": {\"resolution\": [448, 576], \"count\": 660}, \"1\": {\"resolution\": [512, 512], \"count\": 100}, \"2\": {\"resolution\": [576, 448], \"count\": 30}}, \"mean_img_ar_error\": 0.021200318809143717}, \"subsets\": [{\"img_count\": 79, \"num_repeats\": 10, \"color_aug\": false, \"flip_aug\": false, \"random_crop\": false, \"shuffle_caption\": true, \"keep_tokens\": 0, \"image_dir\": \"train_data\", \"class_tokens\": \"mksks\", \"is_reg\": false}]}]",
+                "ss_epoch": "10",
+                "ss_face_crop_aug_range": "None",
+                "ss_full_fp16": "False",
+                "ss_gradient_accumulation_steps": "1",
+                "ss_gradient_checkpointing": "False",
+                "ss_learning_rate": "0.0001",
+                "ss_lowram": "True",
+                "ss_lr_scheduler": "constant",
+                "ss_lr_warmup_steps": "0",
+                "ss_max_grad_norm": "1.0",
+                "ss_max_token_length": "225",
+                "ss_max_train_steps": "1320",
+                "ss_min_snr_gamma": "None",
+                "ss_mixed_precision": "fp16",
+                "ss_network_alpha": "16",
+                "ss_network_dim": "32",
+                "ss_network_module": "networks.lora",
+                "ss_new_sd_model_hash": "ac68270450051ac4da9577c622cd45774d19d2c1adf2bda339515daee141e5bc",
+                "ss_noise_offset": "None",
+                "ss_num_batches_per_epoch": "132",
+                "ss_num_epochs": "10",
+                "ss_num_reg_images": "0",
+                "ss_num_train_images": "790",
+                "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit",
+                "ss_output_name": "chaeyoungtwicelora",
+                "ss_prior_loss_weight": "1.0",
+                "ss_sd_model_hash": "dade428d",
+                "ss_sd_model_name": "beautifulRealistic_brav5.safetensors",
+                "ss_sd_scripts_commit_hash": "d9c629f6242c6f00dfa322287807e6c1948d2271",
+                "ss_seed": "3952559432",
+                "ss_session_id": "1744624752",
+                "ss_tag_frequency": {
+                    "train_data": {
+                        "chaeyoungtwicelora": 79,
+                        "1girl": 78,
+                        "solo": 74,
+                        "long hair": 66,
+                        "looking at viewer": 61,
+                        "open mouth": 7,
+                        "blonde hair": 60,
+                        "ribbon": 6,
+                        "jewelry": 45,
+                        "earrings": 18,
+                        "mole": 61,
+                        "black eyes": 36,
+                        "cosplay": 4,
+                        "pink background": 4,
+                        "portrait": 16,
+                        "mole under mouth": 50,
+                        "forehead": 2,
+                        "realistic": 71,
+                        "tongue": 4,
+                        "tongue out": 3,
+                        "simple background": 7,
+                        "shirt": 30,
+                        "bow": 5,
+                        "white shirt": 16,
+                        "upper body": 23,
+                        "hair bow": 3,
+                        "hairband": 2,
+                        "v": 5,
+                        "ring": 14,
+                        "double v": 1,
+                        "smile": 17,
+                        "pointing": 4,
+                        "blue eyes": 6,
+                        "lips": 54,
+                        "dutch angle": 1,
+                        "bangs": 33,
+                        "black hair": 19,
+                        "white background": 2,
+                        "holding": 11,
+                        "multicolored hair": 9,
+                        "necktie": 6,
+                        "solo focus": 1,
+                        "blunt bangs": 2,
+                        "phone": 3,
+                        "cellphone": 3,
+                        "heart": 3,
+                        "necklace": 19,
+                        "sweater": 6,
+                        "turtleneck": 1,
+                        "cross": 2,
+                        "cross necklace": 1,
+                        "nose": 3,
+                        "pointing at viewer": 2,
+                        "closed mouth": 8,
+                        "hood": 1,
+                        "hat": 2,
+                        "brown eyes": 10,
+                        "jacket": 7,
+                        "zipper": 3,
+                        "skirt": 5,
+                        "long sleeves": 11,
+                        "standing": 3,
+                        "pantyhose": 1,
+                        "cowboy shot": 3,
+                        "pleated skirt": 1,
+                        "parted lips": 15,
+                        "bag": 2,
+                        "head tilt": 2,
+                        "plaid": 1,
+                        "blue background": 2,
+                        "plaid skirt": 1,
+                        "baseball cap": 1,
+                        "handbag": 1,
+                        "shoulder bag": 1,
+                        "collared shirt": 4,
+                        "black necktie": 3,
+                        "short hair": 3,
+                        "teeth": 11,
+                        "wing collar": 1,
+                        "red background": 2,
+                        "cosmetics": 1,
+                        "lipstick tube": 1,
+                        "short sleeves": 7,
+                        "tattoo": 7,
+                        "arm tattoo": 4,
+                        "sleeveless": 1,
+                        "arm up": 1,
+                        "sleeveless shirt": 1,
+                        "makeup": 1,
+                        "breasts": 3,
+                        "navel": 3,
+                        "monochrome": 2,
+                        "greyscale": 2,
+                        "midriff": 6,
+                        "striped": 1,
+                        "black background": 1,
+                        "mole on breast": 3,
+                        "sitting": 3,
+                        "closed eyes": 2,
+                        "braid": 7,
+                        "pants": 3,
+                        "twin braids": 1,
+                        "fangs": 1,
+                        "t-shirt": 2,
+                        "couch": 1,
+                        "jeans": 5,
+                        "blue pants": 1,
+                        "print shirt": 3,
+                        "sticker": 1,
+                        "bare shoulders": 5,
+                        "dress": 8,
+                        "hands on hips": 1,
+                        "bird": 1,
+                        "animal": 1,
+                        "on head": 3,
+                        "white hair": 2,
+                        "animal ears": 1,
+                        "holding phone": 2,
+                        "nail polish": 12,
+                        "blurry": 5,
+                        "black jacket": 3,
+                        "parted bangs": 3,
+                        "pokemon (creature)": 2,
+                        "blurry background": 6,
+                        "black nails": 5,
+                        "hands on own face": 2,
+                        "hands on own cheeks": 2,
+                        "pokemon on head": 2,
+                        "pikachu": 2,
+                        "flower": 7,
+                        "green shirt": 1,
+                        "holding flower": 2,
+                        "close-up": 4,
+                        "sunflower": 1,
+                        "grin": 3,
+                        "depth of field": 1,
+                        "denim": 5,
+                        "blue nails": 3,
+                        "own hands together": 1,
+                        "bandaid": 1,
+                        "bandaid on face": 1,
+                        "biting": 1,
+                        "lying": 1,
+                        "on back": 1,
+                        "bracelet": 3,
+                        "ball": 1,
+                        "soccer uniform": 1,
+                        "soccer ball": 1,
+                        "soccer": 1,
+                        "telstar": 1,
+                        "multiple girls": 2,
+                        "brown hair": 1,
+                        "indoors": 5,
+                        "white dress": 4,
+                        "6+girls": 1,
+                        "wavy hair": 3,
+                        "sandals": 2,
+                        "pillar": 2,
+                        "throne": 1,
+                        "statue": 1,
+                        "belt": 4,
+                        "black skirt": 3,
+                        "hair bun": 2,
+                        "black shirt": 2,
+                        "double bun": 2,
+                        "traditional media": 1,
+                        "star (symbol)": 2,
+                        "yellow nails": 3,
+                        "looking to the side": 2,
+                        "looking away": 1,
+                        "freckles": 2,
+                        "food": 1,
+                        "candy": 1,
+                        "lollipop": 1,
+                        "shorts": 1,
+                        "lipstick": 1,
+                        "denim shorts": 1,
+                        "two-tone hair": 3,
+                        "game console": 1,
+                        "english text": 2,
+                        "parody": 1,
+                        "meme": 1,
+                        "wings": 2,
+                        "angel wings": 2,
+                        "artist name": 2,
+                        "clothing cutout": 1,
+                        "weapon": 1,
+                        "sword": 1,
+                        "holding weapon": 1,
+                        "holding sword": 1,
+                        "katana": 1,
+                        "shoulder cutout": 1,
+                        "detached sleeves": 2,
+                        "column": 1,
+                        "green background": 2,
+                        "full body": 1,
+                        "shoes": 2,
+                        "socks": 1,
+                        "black footwear": 1,
+                        "backpack": 1,
+                        "white socks": 1,
+                        "sneakers": 1,
+                        "adidas": 1,
+                        "arms up": 2,
+                        "crop top": 1,
+                        "clothes writing": 1,
+                        "hair ornament": 4,
+                        "hair flower": 2,
+                        "bra strap": 3,
+                        "sleeves past wrists": 1,
+                        "piercing": 1,
+                        "ear piercing": 1,
+                        "hairclip": 1,
+                        "multiple boys": 1,
+                        "smartphone": 1,
+                        "ground vehicle": 2,
+                        "selfie": 3,
+                        "hair ribbon": 1,
+                        "high heels": 1,
+                        "chair": 1,
+                        "curtains": 1,
+                        "white ribbon": 1,
+                        "cigarette": 2,
+                        "leather": 1,
+                        "leather jacket": 1,
+                        "microphone": 2,
+                        "midriff peek": 1,
+                        "holding microphone": 1,
+                        "\\m/": 1,
+                        "\\n/": 1,
+                        "tears": 3,
+                        "crying": 1,
+                        "hair over shoulder": 1,
+                        "headset": 1,
+                        "mole under eye": 1,
+                        "photo background": 1,
+                        "reference inset": 1,
+                        "photo inset": 1,
+                        "cleavage": 1,
+                        "licking lips": 1,
+                        "blinds": 1,
+                        "motor vehicle": 1,
+                        "camisole": 1,
+                        "car": 1,
+                        "car interior": 1
+                    }
+                },
+                "ss_text_encoder_lr": "5e-05",
+                "ss_training_comment": "None",
+                "ss_training_finished_at": "1688996671.2788308",
+                "ss_training_started_at": "1688994613.6577346",
+                "ss_unet_lr": "0.0001",
+                "ss_v2": "False",
+                "sshs_legacy_hash": "34530023",
+                "sshs_model_hash": "0123cf7d8cee2f8a334e896ac472ce0cfe77cc790b85268982ee3315eeeeda81"
+            }
+        },
+        "lora/hoshizaki20ao07.EmtO": {
+            "mtime": 1689044475.6865387,
+            "value": {
+                "ss_adaptive_noise_scale": "None",
+                "ss_batch_size_per_device": "1",
+                "ss_bucket_info": {
+                    "buckets": {
+                        "0": {
+                            "resolution": [
+                                768,
+                                768
+                            ],
+                            "count": 360
+                        }
+                    },
+                    "mean_img_ar_error": 0.0
+                },
+                "ss_bucket_no_upscale": "False",
+                "ss_cache_latents": "True",
+                "ss_caption_dropout_every_n_epochs": "0",
+                "ss_caption_dropout_rate": "0.0",
+                "ss_caption_tag_dropout_rate": "0.0",
+                "ss_clip_skip": "2",
+                "ss_color_aug": "False",
+                "ss_dataset_dirs": {
+                    "10_Hoshizaki_Ao": {
+                        "n_repeats": 10,
+                        "img_count": 36
+                    }
+                },
+                "ss_enable_bucket": "True",
+                "ss_epoch": "6",
+                "ss_face_crop_aug_range": "None",
+                "ss_flip_aug": "False",
+                "ss_full_fp16": "False",
+                "ss_gradient_accumulation_steps": "1",
+                "ss_gradient_checkpointing": "False",
+                "ss_keep_tokens": "1",
+                "ss_learning_rate": "3.4e-05",
+                "ss_lowram": "False",
+                "ss_lr_scheduler": "cosine_with_restarts",
+                "ss_lr_warmup_steps": "0",
+                "ss_max_bucket_reso": "1024",
+                "ss_max_grad_norm": "1.0",
+                "ss_max_token_length": "255",
+                "ss_max_train_steps": "3600",
+                "ss_min_bucket_reso": "256",
+                "ss_min_snr_gamma": "None",
+                "ss_mixed_precision": "fp16",
+                "ss_multires_noise_discount": "0.3",
+                "ss_multires_noise_iterations": "None",
+                "ss_network_alpha": "32",
+                "ss_network_dim": "32",
+                "ss_network_dropout": "0",
+                "ss_network_module": "networks.lora",
+                "ss_new_sd_model_hash": "a64573359af0f1071ef01d0dc93df2bc90eb1d0bcf3e26058fbf5aeff37c6462",
+                "ss_noise_offset": "None",
+                "ss_num_batches_per_epoch": "360",
+                "ss_num_epochs": "10",
+                "ss_num_reg_images": "0",
+                "ss_num_train_images": "360",
+                "ss_optimizer": "lion_pytorch.lion_pytorch.Lion",
+                "ss_output_name": "Hoshizaki Ao_07",
+                "ss_prior_loss_weight": "1",
+                "ss_random_crop": "False",
+                "ss_reg_dataset_dirs": {},
+                "ss_resolution": "(768, 768)",
+                "ss_scale_weight_norms": "None",
+                "ss_sd_model_hash": "0e200e66",
+                "ss_sd_model_name": "ACertainty TanedaRisa.ckpt",
+                "ss_sd_scripts_commit_hash": "(unknown)",
+                "ss_seed": "1337",
+                "ss_session_id": "3392007080",
+                "ss_shuffle_caption": "True",
+                "ss_steps": "2160",
+                "ss_tag_frequency": {
+                    "10_Hoshizaki_Ao": {
+                        "uniform": 15,
+                        "1girl": 36,
+                        "solo": 36,
+                        "blue background": 1,
+                        "simple background": 33,
+                        "standing": 24,
+                        "cowboy shot": 3,
+                        "hand up": 11,
+                        "wing collar": 1,
+                        "full body": 15,
+                        "hand on hip": 23,
+                        "white background": 31,
+                        "looking at viewer": 10,
+                        "v": 1,
+                        "smile": 4,
+                        "closed mouth": 8,
+                        "outdoors": 2,
+                        "snow": 1,
+                        "loose necktie": 1,
+                        "hands up": 2,
+                        "wind": 1,
+                        "wind lift": 1,
+                        "clothes lift": 1,
+                        "head": 6,
+                        "hairband": 6,
+                        "portrait": 6,
+                        "brown eyes": 6,
+                        "short hair": 6,
+                        "brown hair": 6,
+                        "bangs": 6,
+                        "black hairband": 6,
+                        "expressionless": 1,
+                        "swimwear": 15,
+                        "pool": 1,
+                        "water": 2,
+                        "poolside": 1,
+                        "partially submerged": 1,
+                        "bare shoulders": 2,
+                        "butt crack": 1,
+                        "close-up": 2,
+                        "head out of frame": 15,
+                        "lower body": 7,
+                        "green footwear": 1,
+                        "sweat": 1,
+                        "wading": 1,
+                        "wet": 1,
+                        "bare arms": 1,
+                        "stomach": 1,
+                        "arm behind back": 1,
+                        "holding own arm": 1,
+                        "open mouth": 1,
+                        ":d": 1,
+                        "bob cut": 3,
+                        "blunt bangs": 2,
+                        "black background": 1,
+                        "ring": 1,
+                        "transparent background": 1
+                    }
+                },
+                "ss_text_encoder_lr": "4e-06",
+                "ss_total_batch_size": "1",
+                "ss_training_comment": "None",
+                "ss_training_finished_at": "1687589575.2434814",
+                "ss_training_started_at": "1687588639.8359013",
+                "ss_unet_lr": "3.4e-05",
+                "ss_v2": "False",
+                "sshs_legacy_hash": "1b889f04",
+                "sshs_model_hash": "57eae80dbc4fc531065749d7f19827c64d35fc6a8bade1f115fd14b154d12740"
+            }
+        },
+        "lora/shelti": {
+            "mtime": 1685351246.7413146,
+            "value": {
+                "ss_batch_size_per_device": "2",
+                "ss_bucket_info": {
+                    "buckets": {
+                        "0": {
+                            "resolution": [
+                                128,
+                                64
+                            ],
+                            "count": 10
+                        },
+                        "1": {
+                            "resolution": [
+                                128,
+                                128
+                            ],
+                            "count": 10
+                        },
+                        "2": {
+                            "resolution": [
+                                128,
+                                192
+                            ],
+                            "count": 10
+                        },
+                        "3": {
+                            "resolution": [
+                                192,
+                                192
+                            ],
+                            "count": 10
+                        },
+                        "4": {
+                            "resolution": [
+                                256,
+                                320
+                            ],
+                            "count": 10
+                        },
+                        "5": {
+                            "resolution": [
+                                320,
+                                256
+                            ],
+                            "count": 10
+                        },
+                        "6": {
+                            "resolution": [
+                                384,
+                                384
+                            ],
+                            "count": 10
+                        },
+                        "7": {
+                            "resolution": [
+                                448,
+                                320
+                            ],
+                            "count": 20
+                        },
+                        "8": {
+                            "resolution": [
+                                448,
+                                448
+                            ],
+                            "count": 10
+                        },
+                        "9": {
+                            "resolution": [
+                                448,
+                                768
+                            ],
+                            "count": 10
+                        },
+                        "10": {
+                            "resolution": [
+                                512,
+                                320
+                            ],
+                            "count": 10
+                        },
+                        "11": {
+                            "resolution": [
+                                576,
+                                384
+                            ],
+                            "count": 30
+                        },
+                        "12": {
+                            "resolution": [
+                                576,
+                                448
+                            ],
+                            "count": 10
+                        },
+                        "13": {
+                            "resolution": [
+                                576,
+                                576
+                            ],
+                            "count": 40
+                        },
+                        "14": {
+                            "resolution": [
+                                640,
+                                512
+                            ],
+                            "count": 10
+                        },
+                        "15": {
+                            "resolution": [
+                                704,
+                                448
+                            ],
+                            "count": 10
+                        }
+                    },
+                    "mean_img_ar_error": 0.09222385116544847
+                },
+                "ss_bucket_no_upscale": "True",
+                "ss_cache_latents": "True",
+                "ss_caption_dropout_every_n_epochs": "0",
+                "ss_caption_dropout_rate": "0.0",
+                "ss_caption_tag_dropout_rate": "0.0",
+                "ss_clip_skip": "None",
+                "ss_color_aug": "False",
+                "ss_dataset_dirs": {
+                    "10_shelti dog": {
+                        "n_repeats": 10,
+                        "img_count": 22
+                    }
+                },
+                "ss_enable_bucket": "True",
+                "ss_epoch": "10",
+                "ss_face_crop_aug_range": "None",
+                "ss_flip_aug": "False",
+                "ss_full_fp16": "False",
+                "ss_gradient_accumulation_steps": "1",
+                "ss_gradient_checkpointing": "False",
+                "ss_keep_tokens": "0",
+                "ss_learning_rate": "0.0001",
+                "ss_lowram": "False",
+                "ss_lr_scheduler": "constant",
+                "ss_lr_warmup_steps": "0",
+                "ss_max_bucket_reso": "1024",
+                "ss_max_grad_norm": "1.0",
+                "ss_max_token_length": "None",
+                "ss_max_train_steps": "1100",
+                "ss_min_bucket_reso": "256",
+                "ss_mixed_precision": "fp16",
+                "ss_network_alpha": "128.0",
+                "ss_network_dim": "128",
+                "ss_network_module": "networks.lora",
+                "ss_noise_offset": "None",
+                "ss_num_batches_per_epoch": "110",
+                "ss_num_epochs": "10",
+                "ss_num_reg_images": "0",
+                "ss_num_train_images": "220",
+                "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit",
+                "ss_output_name": "shelti",
+                "ss_prior_loss_weight": "1.0",
+                "ss_random_crop": "False",
+                "ss_reg_dataset_dirs": {},
+                "ss_resolution": "(720, 512)",
+                "ss_sd_model_name": "runwayml/stable-diffusion-v1-5",
+                "ss_sd_scripts_commit_hash": "c001c80e02614f17667e6cd52f0365505466d445",
+                "ss_seed": "None",
+                "ss_session_id": "1990429395",
+                "ss_shuffle_caption": "False",
+                "ss_tag_frequency": {
+                    "10_shelti dog": {
+                        "shelti dog": 22
+                    }
+                },
+                "ss_text_encoder_lr": "5e-05",
+                "ss_total_batch_size": "2",
+                "ss_training_comment": "None",
+                "ss_training_finished_at": "1681583438.473441",
+                "ss_training_started_at": "1681582787.0684104",
+                "ss_unet_lr": "0.0001",
+                "ss_v2": "False",
+                "sshs_legacy_hash": "19abb11b",
+                "sshs_model_hash": "1a1e529b38870e335cbfd4704acb88306751d02d2c8c3119ab028410672cf4bc"
+            }
+        },
+        "lora/desicoffeelyco.l9Na": {
+            "mtime": 1689044595.656517,
+            "value": {
+                "ss_network_args": {
+                    "conv_dim": "8",
+                    "conv_alpha": "1",
+                    "algo": "lora"
+                },
+                "ss_gradient_checkpointing": "False",
+                "ss_lowram": "False",
+                "ss_num_batches_per_epoch": "2420",
+                "ss_full_fp16": "False",
+                "ss_total_batch_size": "12",
+                "ss_adaptive_noise_scale": "None",
+                "ss_keep_tokens": "0",
+                "ss_random_crop": "False",
+                "sshs_legacy_hash": "41db1510",
+                "ss_unet_lr": "0.0001",
+                "ss_sd_scripts_commit_hash": "df1a9acb38951c6b1312379e73daedfdb713f19c",
+                "ss_num_epochs": "4",
+                "ss_lr_warmup_steps": "242",
+                "ss_caption_tag_dropout_rate": "0.0",
+                "ss_batch_size_per_device": "3",
+                "ss_multires_noise_iterations": "4",
+                "ss_reg_dataset_dirs": {
+                    "1_woman": {
+                        "n_repeats": 1,
+                        "img_count": 3500
+                    }
+                },
+                "ss_training_started_at": "1688317551.701319",
+                "ss_num_reg_images": "3500",
+                "ss_network_module": "lycoris.kohya",
+                "ss_steps": "2420",
+                "ss_network_dropout": "0.01",
+                "ss_max_train_steps": "2420",
+                "ss_v2": "False",
+                "ss_epoch": "4",
+                "ss_session_id": "3459073402",
+                "ss_gradient_accumulation_steps": "4",
+                "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit",
+                "ss_network_dim": "8",
+                "ss_face_crop_aug_range": "None",
+                "ss_flip_aug": "False",
+                "ss_tag_frequency": {
+                    "30_desiespressolyco woman": {
+                        "desiespressolyco woman": 35
+                    },
+                    "30_desilattelyco woman": {
+                        "desilattelyco woman": 37
+                    },
+                    "30_desimochalyco woman": {
+                        "desimochalyco woman": 49
+                    },
+                    "1_woman": {
+                        "woman": 3500
+                    }
+                },
+                "ss_network_alpha": "1.0",
+                "ss_clip_skip": "None",
+                "ss_max_bucket_reso": "1024",
+                "ss_num_train_images": "3630",
+                "ss_learning_rate": "0.0001",
+                "ss_seed": "2881091257",
+                "ss_noise_offset": "None",
+                "ss_color_aug": "False",
+                "ss_mixed_precision": "bf16",
+                "ss_text_encoder_lr": "5e-05",
+                "ss_multires_noise_discount": "0.1",
+                "ss_prior_loss_weight": "1.0",
+                "ss_training_comment": "Trigger words: desiespressolyco, desimochalyco, desilattelyco",
+                "ss_resolution": "(512, 512)",
+                "ss_dataset_dirs": {
+                    "30_desiespressolyco woman": {
+                        "n_repeats": 30,
+                        "img_count": 35
+                    },
+                    "30_desilattelyco woman": {
+                        "n_repeats": 30,
+                        "img_count": 37
+                    },
+                    "30_desimochalyco woman": {
+                        "n_repeats": 30,
+                        "img_count": 49
+                    }
+                },
+                "ss_enable_bucket": "True",
+                "ss_caption_dropout_rate": "0.0",
+                "ss_bucket_no_upscale": "True",
+                "ss_bucket_info": {
+                    "buckets": {
+                        "0": {
+                            "resolution": [
+                                256,
+                                704
+                            ],
+                            "count": 30
+                        },
+                        "1": {
+                            "resolution": [
+                                256,
+                                896
+                            ],
+                            "count": 30
+                        },
+                        "2": {
+                            "resolution": [
+                                320,
+                                576
+                            ],
+                            "count": 30
+                        },
+                        "3": {
+                            "resolution": [
+                                320,
+                                640
+                            ],
+                            "count": 60
+                        },
+                        "4": {
+                            "resolution": [
+                                320,
+                                704
+                            ],
+                            "count": 90
+                        },
+                        "5": {
+                            "resolution": [
+                                320,
+                                768
+                            ],
+                            "count": 30
+                        },
+                        "6": {
+                            "resolution": [
+                                384,
+                                512
+                            ],
+                            "count": 1530
+                        },
+                        "7": {
+                            "resolution": [
+                                384,
+                                576
+                            ],
+                            "count": 660
+                        },
+                        "8": {
+                            "resolution": [
+                                384,
+                                640
+                            ],
+                            "count": 420
+                        },
+                        "9": {
+                            "resolution": [
+                                448,
+                                448
+                            ],
+                            "count": 60
+                        },
+                        "10": {
+                            "resolution": [
+                                448,
+                                512
+                            ],
+                            "count": 30
+                        },
+                        "11": {
+                            "resolution": [
+                                448,
+                                576
+                            ],
+                            "count": 120
+                        },
+                        "12": {
+                            "resolution": [
+                                512,
+                                384
+                            ],
+                            "count": 390
+                        },
+                        "13": {
+                            "resolution": [
+                                512,
+                                448
+                            ],
+                            "count": 30
+                        },
+                        "14": {
+                            "resolution": [
+                                512,
+                                512
+                            ],
+                            "count": 3630
+                        },
+                        "15": {
+                            "resolution": [
+                                576,
+                                384
+                            ],
+                            "count": 90
+                        },
+                        "16": {
+                            "resolution": [
+                                640,
+                                384
+                            ],
+                            "count": 30
+                        }
+                    },
+                    "mean_img_ar_error": 0.00039446527197912643
+                },
+                "ss_training_finished_at": "1688329441.3013394",
+                "ss_max_token_length": "None",
+                "ss_max_grad_norm": "1.0",
+                "ss_output_name": "DesiCoffeeLyco",
+                "sshs_model_hash": "4ea5437d00727ab3a88191d8c9eaeadbc529cc0f1cf504bbb65576394c41700f",
+                "ss_caption_dropout_every_n_epochs": "0",
+                "ss_scale_weight_norms": "None",
+                "ss_shuffle_caption": "False",
+                "ss_lr_scheduler": "cosine",
+                "ss_cache_latents": "False",
+                "ss_min_snr_gamma": "None",
+                "ss_sd_model_name": "runwayml/stable-diffusion-v1-5",
+                "ss_min_bucket_reso": "256"
+            }
+        }
+    },
+    "extensions-git": {
+        "a1111-sd-webui-lycoris": {
+            "mtime": 1688951463.0870218,
+            "value": {
+                "remote": "https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris",
+                "commit_date": 1688888698,
+                "branch": "main",
+                "commit_hash": "8e97bf54867c25d00fc480be1ab4dae5399b35ef",
+                "version": "8e97bf54"
+            }
+        },
+        "sd-webui-additional-networks": {
+            "mtime": 1688951440.3641958,
+            "value": {
+                "remote": "https://ghproxy.com/https://github.com/kohya-ss/sd-webui-additional-networks.git",
+                "commit_date": 1684845075,
+                "branch": "main",
+                "commit_hash": "e9f3d622b5a98650008a685ea23b27eb810da35a",
+                "version": "e9f3d622"
+            }
+        },
+        "sd-webui-controlnet": {
+            "mtime": 1690870242.6799648,
+            "value": {
+                "remote": "https://github.com/Mikubill/sd-webui-controlnet.git",
+                "commit_date": 1688849641,
+                "branch": "main",
+                "commit_hash": "07bed6ccf8a468a45b2833cfdadc749927cbd575",
+                "version": "07bed6cc"
+            }
+        },
+        "sd-webui-mov2mov": {
+            "mtime": 1688951457.6503012,
+            "value": {
+                "remote": "https://github.com/Scholar01/sd-webui-mov2mov",
+                "commit_date": 1681893864,
+                "branch": "master",
+                "commit_hash": "0ba11a1a759b724a021ac1dc6829a8f59b100f9c",
+                "version": "0ba11a1a"
+            }
+        },
+        "stable-diffusion-webui-chinese": {
+            "mtime": 1688951446.648702,
+            "value": {
+                "remote": "https://github.com/VinsonLaro/stable-diffusion-webui-chinese",
+                "commit_date": 1684055001,
+                "branch": "main",
+                "commit_hash": "0af4e05ba85552bc579e4c92152cb4d50b7e8d06",
+                "version": "0af4e05b"
+            }
+        }
+    }
+}
