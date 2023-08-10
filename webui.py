@@ -388,7 +388,7 @@ def api_only():
 
     response = api.text2imgapi(request)
     display(response)
-    display(f'<img src="data:image/jpg;base64,{response.images[0]}" />')
+    display.HTML(f'<img src="data:image/jpg;base64,{response.images[0]}" />')
 
     # print(f"Startup time: {startup_timer.summary()}.")
     # api.launch(
