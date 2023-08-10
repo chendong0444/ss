@@ -371,6 +371,7 @@ def api_only():
     modules.script_callbacks.app_started_callback(None, app)
 
     request = StableDiffusionTxt2ImgProcessingAPI()
+    request.save_images = True
     response = api.text2imgapi(request)
     display(response)
 
