@@ -16,6 +16,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from packaging import version
 
+from modules.api.api import decode_base64_to_image
 from modules.api.models import StableDiffusionTxt2ImgProcessingAPI
 
 import logging
@@ -388,7 +389,7 @@ def api_only():
 
     response = api.text2imgapi(request)
     display(response)
-    display(Markdown(f'![image](data:image/png:base64,{response.images[0]})'))
+    display(decode_base64_to_image(response.images[0]))
 
     # print(f"Startup time: {startup_timer.summary()}.")
     # api.launch(
