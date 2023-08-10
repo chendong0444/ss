@@ -380,6 +380,10 @@ def api_only():
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
     """
+    request.width = 512
+    request.height = 768
+    request.Model = 'majicmixRealistic_v5'
+    request.Sampler = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)
     display(response)
