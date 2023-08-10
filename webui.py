@@ -382,7 +382,7 @@ def api_only():
     """
     request.width = 512
     request.height = 768
-    request.model_name = 'majicmixRealistic_v5'
+    request.sd_model_name = 'majicmixRealistic_v5'
     request.sampler_name = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)
