@@ -383,13 +383,17 @@ def api_only():
     """
     request.width = 512
     request.height = 768
-    request.seed = 676886878
+    # request.seed = 676886878
     request.steps = 26
     request.sampler_name = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)
     display(response)
-    display(decode_base64_to_image(response.images[0]))
+
+    # show image
+    im = decode_base64_to_image(response.images[0])
+    im.show()
+    display(im)
 
     # print(f"Startup time: {startup_timer.summary()}.")
     # api.launch(
