@@ -16,6 +16,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from packaging import version
 
+from modules.api.models import StableDiffusionTxt2ImgProcessingAPI
+
 import logging
 
 # We can't use cmd_opts for this because it will not have been initialized at this point.
@@ -367,14 +369,20 @@ def api_only():
 
     modules.script_callbacks.app_started_callback(None, app)
 
-    print(f"Startup time: {startup_timer.summary()}.")
-    api.launch(
-        server_name="0.0.0.0" if cmd_opts.listen else "127.0.0.1",
-        port=cmd_opts.port if cmd_opts.port else 7861,
-        root_path=f"/{cmd_opts.subpath}" if cmd_opts.subpath else ""
-    )
+    request = StableDiffusionTxt2ImgProcessingAPI()
+    response = api.text2imgapi(request)
+    print(response)
+
+    # print(f"Startup time: {startup_timer.summary()}.")
+    # api.launch(
+    #     server_name="0.0.0.0" if cmd_opts.listen else "127.0.0.1",
+    #     port=cmd_opts.port if cmd_opts.port else 7861,
+    #     root_path=f"/{cmd_opts.subpath}" if cmd_opts.subpath else ""
+    # )
 
 
 if __name__ == "__main__":
     api_only()
+
+
 
