@@ -362,7 +362,7 @@ def create_api(app):
 
 
 def api_only():
-    from IPython.display import display, Markdown
+    from IPython.display import display, Markdown, Image
     initialize()
 
     app = FastAPI()
