@@ -372,8 +372,18 @@ def api_only():
 
     request = StableDiffusionTxt2ImgProcessingAPI()
     request.save_images = True
+    request.prompt = '''
+    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,t-shirt, high quality, 
+    film grain, Fujifilm XT3, dynamic angle, blonde, light freckles, detailed skin, pretty girl, show face, cowboy shot,
+    paislash, (purse strap in between breasts), strap connected to bag
+    '''
+    request.negative_prompt = """
+    BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
+    """
+
     response = api.text2imgapi(request)
     display(response)
+    display(response.images[0])
 
     # print(f"Startup time: {startup_timer.summary()}.")
     # api.launch(
