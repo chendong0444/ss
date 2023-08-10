@@ -361,6 +361,7 @@ def create_api(app):
 
 
 def api_only():
+    from IPython.display import display, Markdown, YouTubeVideo
     initialize()
 
     app = FastAPI()
@@ -371,7 +372,7 @@ def api_only():
 
     request = StableDiffusionTxt2ImgProcessingAPI()
     response = api.text2imgapi(request)
-    print(response)
+    display(response)
 
     # print(f"Startup time: {startup_timer.summary()}.")
     # api.launch(
