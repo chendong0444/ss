@@ -3,12 +3,12 @@ import pytest
 import requests
 
 
-@pytest.fixture()
+# @pytest.fixture()
 def url_txt2img(base_url):
     return f"{base_url}/sdapi/v1/txt2img"
 
 
-@pytest.fixture()
+# @pytest.fixture()
 def simple_txt2img_request():
     return {
         "batch_size": 1,
@@ -41,7 +41,9 @@ def simple_txt2img_request():
 
 
 def test_txt2img_simple_performed(url_txt2img, simple_txt2img_request):
-    assert requests.post(url_txt2img, json=simple_txt2img_request).status_code == 200
+    response = requests.post(url_txt2img, json=simple_txt2img_request)
+    assert response.status_code == 200
+    print(response)
 
 
 def test_txt2img_with_negative_prompt_performed(url_txt2img, simple_txt2img_request):
@@ -88,3 +90,7 @@ def test_txt2img_multiple_batches_performed(url_txt2img, simple_txt2img_request)
 def test_txt2img_batch_performed(url_txt2img, simple_txt2img_request):
     simple_txt2img_request["batch_size"] = 2
     assert requests.post(url_txt2img, json=simple_txt2img_request).status_code == 200
+
+
+if __name__ == "__main__":
+    test_txt2img_simple_performed(url_txt2img('http://127.0.0.1:7861'), simple_txt2img_request())
