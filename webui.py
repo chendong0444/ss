@@ -375,8 +375,8 @@ def api_only():
     request.save_images = True
     request.prompt = '''
     <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,high quality, dynamic angle,
-    t-shirt, blonde, detailed skin, (pretty:1.5) girl, show face, cowboy shot,
-    paislash, (purse strap in between breasts:1.5), strap connected to LV brand bag,hotel room ,bed
+    white t-shirt,mini dress,long legs, blonde, detailed skin, (pretty:1.5) girl, show face, 
+    paislash, (purse strap in between breasts:1.5), strap connected to LV brand bag,hotel room ,sit on bed
     '''
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
