@@ -375,16 +375,16 @@ def api_only():
     request.save_images = True
     request.prompt = '''
     <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,high quality, dynamic angle,
-    white t-shirt,mini dress,long legs, blonde, detailed skin, (pretty:1.5) girl, show face, 
-    paislash, (purse strap in between breasts:1.5), strap connected to LV brand bag,hotel room ,sit on bed
+    white t-shirt,mini dress,long legs, blonde, detailed skin, (pretty:1.5) girl, show face, all body to viewer,
+    (purse strap in between breasts:1.5), strap connected to LV brand bag,hotel room ,sit on bed
     '''
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
     """
-    request.width = 360
-    request.height = 740
+    request.width = 350
+    request.height = 700
     # request.seed = 676886878
-    request.steps = 99
+    request.steps = 50
     request.sampler_name = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)
