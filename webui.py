@@ -375,14 +375,14 @@ def api_only():
     request.save_images = True
     request.prompt = '''
     <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,t-shirt, high quality, 
-    film grain, Fujifilm XT3, dynamic angle, blonde, light freckles, detailed skin, pretty girl, show face, cowboy shot,
-    paislash, (purse strap in between breasts), strap connected to bag
+    film grain, Fujifilm XT3, dynamic angle, blonde, detailed skin, pretty girl, show face, cowboy shot,
+    paislash, (purse strap in between breasts:1.5), strap connected to LV bag
     '''
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
     """
-    request.width = 512
-    request.height = 768
+    request.width = 360
+    request.height = 740
     # request.seed = 676886878
     request.steps = 26
     request.sampler_name = 'DPM++ SDE Karras'
@@ -391,9 +391,9 @@ def api_only():
     display(response)
 
     # show image
-    im = decode_base64_to_image(response.images[0])
-    im.show()
-    display(im)
+    # im = decode_base64_to_image(response.images[0])
+    # im.show()
+    # display(im)
 
     # print(f"Startup time: {startup_timer.summary()}.")
     # api.launch(
