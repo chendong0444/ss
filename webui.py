@@ -374,9 +374,9 @@ def api_only():
     request = StableDiffusionTxt2ImgProcessingAPI()
     request.save_images = True
     request.prompt = '''
-    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,t-shirt, high quality, 
-    film grain, Fujifilm XT3, dynamic angle, blonde, detailed skin, pretty girl, show face, cowboy shot,
-    paislash, (purse strap in between breasts:1.5), strap connected to LV bag
+    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,high quality, dynamic angle,
+    t-shirt, blonde, detailed skin, (pretty:1.5) girl, show face, cowboy shot,
+    paislash, (purse strap in between breasts:1.5), strap connected to LV brand bag,hotel room ,bed
     '''
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
