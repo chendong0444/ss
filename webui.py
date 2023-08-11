@@ -15,9 +15,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from packaging import version
-
+from IPython.display import display, Markdown, Image
 from modules.api.api import decode_base64_to_image
 from modules.api.models import StableDiffusionTxt2ImgProcessingAPI
+from translate import Translator
 
 import logging
 
@@ -361,8 +362,13 @@ def create_api(app):
     return api
 
 
+def translate(zh_prompt):
+    translator = Translator(to_lang="en")
+    en_prompt = translator.translate(zh_prompt)
+    return en_prompt
+
+
 def api_only():
-    from IPython.display import display, Markdown, Image
     initialize()
 
     app = FastAPI()
@@ -373,10 +379,11 @@ def api_only():
 
     request = StableDiffusionTxt2ImgProcessingAPI()
     request.save_images = True
-    request.prompt = '''
-    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd, soft lighting,high quality, dynamic angle,
-    white t-shirt,mini dress,long legs, blonde, detailed skin, (pretty:1.5) girl, show face, all body to viewer,
-    (purse strap in between breasts:1.5), strap connected to LV brand bag,hotel room ,sit on bed
+    prompt = '白T恤,迷你裙,大长腿, 白皙的皮肤, (漂亮:1.5) 女孩, 面对观众,在酒店房间里,坐在床上,背LV包,包带在双乳之间,(丰满的双乳:1.5)'
+    prompt = translate(prompt)
+    display(prompt)
+    request.prompt = f'''
+    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, {prompt},
     '''
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
