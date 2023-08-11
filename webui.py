@@ -15,10 +15,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from packaging import version
-from IPython.display import display, Markdown, Image
 from modules.api.api import decode_base64_to_image
 from modules.api.models import StableDiffusionTxt2ImgProcessingAPI
-from translate import Translator
+import googletrans as gt
 
 import logging
 
@@ -363,8 +362,7 @@ def create_api(app):
 
 
 def translate(zh_prompt):
-    translator = Translator(to_lang="en")
-    en_prompt = translator.translate(zh_prompt)
+    en_prompt = gt.translate(zh_prompt, 'en')
     return en_prompt
 
 
