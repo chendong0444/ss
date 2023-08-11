@@ -379,7 +379,7 @@ def api_only():
     request.save_images = True
     prompt = '白T恤,迷你裙,大长腿, 白皙的皮肤, (漂亮:1.5) 女孩, 面对观众,在酒店房间里,坐在床上,背LV包,包带在双乳之间,(丰满的双乳:1.5)'
     prompt = translate(prompt)
-    display(prompt)
+    print(prompt)
     request.prompt = f'''
     <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, {prompt},
     '''
