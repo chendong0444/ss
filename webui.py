@@ -377,7 +377,7 @@ def api_only():
 
     request = StableDiffusionTxt2ImgProcessingAPI()
     request.save_images = True
-    prompt = '透明, 白皙的皮肤, 苗条,裸体,(漂亮:1.5)空姐, 特写,在酒店房间里,坐在床上,背LV包,包带在双乳之间,(丰满的双乳:1.5)'
+    prompt = '透明, 白皙的皮肤, 苗条,裸体,(漂亮:1.5),范冰冰, 特写,在酒店房间里,坐在床上,背LV包,包带在双乳之间,(丰满的双乳:1.5)'
     prompt = translate(prompt)
     print(prompt)
     request.prompt = f'''
