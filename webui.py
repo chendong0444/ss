@@ -389,7 +389,7 @@ def api_only():
     request.width = 350
     request.height = 700
     # request.seed = 676886878
-    request.steps = 40
+    request.steps = 60
     request.sampler_name = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)
