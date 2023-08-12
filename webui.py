@@ -381,15 +381,15 @@ def api_only():
     prompt = translate(prompt)
     print(prompt)
     request.prompt = f'''
-    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, {prompt},
+    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, {prompt},nsfw
     '''
     request.negative_prompt = """
-    BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
+    BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, 
     """
     request.width = 350
     request.height = 700
     # request.seed = 676886878
-    request.steps = 50
+    request.steps = 20
     request.sampler_name = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)

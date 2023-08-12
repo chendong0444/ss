@@ -174,4 +174,4 @@ Licenses for borrowed code can be found in `Settings -> Licenses` screen, and al
 
 
 ## run cmd
-.\webui.bat --skip-torch-cuda-test --precision full --no-half
+.\webui.bat --skip-torch-cuda-test --precision full --no-half --skip-torch-cuda-test

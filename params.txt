@@ -1,2 +1,6 @@
-example prompt
-Steps: 3, Sampler: Euler a, CFG scale: 7.0, Seed: 3504240930, Size: 64x64, Model hash: 33c9f6dfcb, Model: majicmixRealistic_v5, Denoising strength: 0.0, Version: 1.5.1
+<lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, Transparent white T-shirt, miniskirt, long legs, fair skin, (pretty: 1.5) female model, facing the audience, sitting on the bed in a hotel room, carrying an LV bag with the strap between her breasts, ( Plump breasts: 1.5),
+    
+Negative prompt: 
+    BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, nsfw
+    
+Steps: 20, Sampler: DPM++ SDE Karras, CFG scale: 7.0, Seed: 591957929, Size: 350x700, Model hash: 33c9f6dfcb, Model: majicmixRealistic_v5, Denoising strength: 0, Version: 1.5.1
