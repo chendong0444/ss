@@ -377,11 +377,11 @@ def api_only():
 
     request = StableDiffusionTxt2ImgProcessingAPI()
     request.save_images = True
-    prompt = '透明情趣睡衣,大长腿,黑丝, 白皙的皮肤, (漂亮:1.5) 女模特, 特写,在酒店房间里,坐在床上,背LV包,包带在双乳之间,(丰满的双乳:1.5)'
+    prompt = '白色透明情趣睡衣, 大长腿, 白皙的皮肤, 苗条,裸体,(漂亮:1.5) 女模特, 特写,在酒店房间里,坐在床上,背LV包,包带在双乳之间,(丰满的双乳:1.5)'
     prompt = translate(prompt)
     print(prompt)
     request.prompt = f'''
-    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, {prompt},nsfw
+    <lora:paislash:1>, RAW photo, subject, (high detailed skin:1.1), 8k uhd,high quality, {prompt},
     '''
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, 
@@ -389,7 +389,7 @@ def api_only():
     request.width = 350
     request.height = 700
     # request.seed = 676886878
-    request.steps = 60
+    request.steps = 80
     request.sampler_name = 'DPM++ SDE Karras'
 
     response = api.text2imgapi(request)
