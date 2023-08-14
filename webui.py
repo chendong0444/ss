@@ -377,7 +377,7 @@ def api_only():
 
     request = StableDiffusionTxt2ImgProcessingAPI()
     request.save_images = True
-    prompt = '女孩,透明, 白皙的皮肤, 苗条,裸体,(漂亮:1.5),瓜子脸, 胸部特写,在酒店房间里,坐在床上,(丰满的双乳:1.5)'
+    prompt = '女孩,透明, 白皙的皮肤, 苗条,(漂亮:1.5),瓜子脸, 胸部特写,在酒店房间里,睡在床上,(丰满的双乳:1.5)'
     prompt = translate(prompt)
     print(prompt)
     request.prompt = f'''
@@ -386,8 +386,8 @@ def api_only():
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, 
     """
-    request.width = 600
-    request.height = 600
+    request.width = 700
+    request.height = 700
     # request.seed = 676886878
     request.steps = 80
     request.sampler_name = 'DPM++ SDE Karras'
