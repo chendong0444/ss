@@ -386,8 +386,8 @@ def api_only():
     request.negative_prompt = """
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, 
     """
-    request.width = 700
-    request.height = 700
+    request.width = 650
+    request.height = 650
     # request.seed = 676886878
     request.steps = 80
     request.sampler_name = 'DPM++ SDE Karras'
