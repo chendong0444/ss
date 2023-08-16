@@ -387,7 +387,7 @@ def api_only():
     BadDream UnrealisticDream, extra arms, extra legs, fused fingers, too many fingers, long neck, 
     """
     request.width = 400
-    request.height = 1200
+    request.height = 1100
     # request.seed = 676886878
     request.steps = 80
     request.sampler_name = 'DPM++ SDE Karras'
